@@ -1,0 +1,22 @@
+package overriding;
+class SS{
+    protected void property(){
+	    System.out.println("100 BMW ");
+	}
+	
+	Protected void marry(){
+	    System.out.println("Supnkha ");
+	}
+	
+	class Vipin extends SS{
+	   void  marry(){
+		  System.out.println("Only");
+		 }
+	  
+	  public static void main(String[]args){
+	      Vipin vp=new Vipin();
+		  vp.marry();
+	  }
+	}
+}
+
