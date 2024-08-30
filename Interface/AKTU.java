@@ -1,6 +1,6 @@
 interface AKTU {
     void akg();
-    void rkgt();
+     final void rkgt();
     void abes();
     default void bca(){
         System.out.println("BCA from AKTU");
