@@ -22,6 +22,7 @@ abstract class RestAbstract {
 
     public static void main(String[] args) {
         RestAbstract ra=new Shoroom(){
+            // Anonymous class Declarration
             public void model(){}
             public void type(){}
         };
