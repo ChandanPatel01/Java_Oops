@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 class OwnSalException extends RuntimeException {  // Custom exception class banayi
    
-    // public String toString() {  // toString method ko override kiya
-    //     return "Salary must be Positive!";  // Error message diya jo show hoga jab exception throw hoga
-    // }
+    public String toString() {  // toString method ko override kiya
+        return "Salary must be Positive!";  // Error message diya jo show hoga jab exception throw hoga
+    
+}
 }
 
 class Test {  // Yeh class employee ka data input lene aur show karne ke liye hai
@@ -45,11 +46,10 @@ public class OwnExeception {  // Main class jahan program start hota hai
             new Test().accept();  // Test class ka object banakar accept method call kiya
         } catch (OwnSalException e) {  // Agar custom exception throw hota hai toh use catch karo
             System.out.println(e);  // Exception ka message print karo
-            System.out.println("positive");
         }
-        
+        finally{
 
         System.out.println("All is well!");  // Finally statement jo hamesha print hogi
-    
+        }
     }
 }
