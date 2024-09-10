@@ -1,6 +1,10 @@
 interface SimpleInterface{
     abstract  void Student();
     abstract  void Teacher();
+    static void  tom(){
+
+    }
+    
 }
 
 class School implements SimpleInterface{

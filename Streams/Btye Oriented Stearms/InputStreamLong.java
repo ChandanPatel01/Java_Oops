@@ -7,7 +7,11 @@ public class InputStreamLong {
         try{
         InputStream inputStream=new FileInputStream("Display.txt");
         int data=inputStream.read();
-        System.out.println(data);
+        while (data!=-1) {
+            System.out.print(data);
+            data=  inputStream.read();
+        }
+        
         
         inputStream.close();
         }
