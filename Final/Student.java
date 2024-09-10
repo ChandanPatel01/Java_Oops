@@ -1,3 +1,6 @@
+// blank final varibale
+//1-non static  blank final varibale
+
 class Student {
     private final Integer studentId;
     private  String studentName;

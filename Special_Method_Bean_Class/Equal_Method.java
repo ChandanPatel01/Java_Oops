@@ -8,9 +8,9 @@ class Equal_Method{
 	   Boolean res=em1.equals(em2);
 	   Boolean res1=em1.equals(em3);
 	   
-	   System.out.println("Res:"+ res);
+	   System.out.println(""  + res);
 	   
-	   System.out.println("Res1:"+ res1);
+	   System.out.println(""  + res1);
 	   
 	}
 }

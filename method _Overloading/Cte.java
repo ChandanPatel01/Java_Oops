@@ -1,6 +1,6 @@
 package cte;
 public class Cte{
-   void m1(int x,int y){
+   void m1(int x,long y){
          System.out.println("Hello Chandan :" +x);
 		 System.out.println("Hello Chandan :"+ y);
    }
