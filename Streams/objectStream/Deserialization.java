@@ -1,8 +1,4 @@
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.ObjectInputStream;
+import java.io.*;
 
 public class Deserialization {
     public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
@@ -16,9 +12,18 @@ public class Deserialization {
         // Closing the stream
         objectInputStream.close();
 
-        // Printing the Employee object details
-        System.out.println("Employee ID: " + employee.getEmpId());
-        System.out.println("Employee Name: " + employee.getEmpName());
-        System.out.println("Employee Salary: " + employee.getEmpSal());
+        // FileWriter to write the output back to Emp.txt
+        FileWriter fileWriter = new FileWriter("Emp.txt", true); // 'true' appends to the file
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+
+        // Writing the Employee object details to the file
+        bufferedWriter.write("Employee ID: " + employee.getEmpId() + "\n");
+        bufferedWriter.write("Employee Name: " + employee.getEmpName() + "\n");
+        bufferedWriter.write("Employee Salary: " + employee.getEmpSal() + "\n");
+
+        // Closing the BufferedWriter
+        bufferedWriter.close();
+
+        System.out.println("Employee details written to Emp.txt");
     }
 }
