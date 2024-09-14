@@ -1,4 +1,4 @@
-package simple_print;
+//package simple_print;
 public class Student_Sec{
     int id;
 	String name;

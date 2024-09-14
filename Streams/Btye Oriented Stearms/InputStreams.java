@@ -1,5 +1,5 @@
 import java.io.*;
-public class InputStreams {
+class Test {
     public static void main(String[]aergs)  throws FileNotFoundException,IOException{
          InputStream inputStream=new FileInputStream("Massage.txt");
          int data=inputStream.read();

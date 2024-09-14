@@ -1,4 +1,4 @@
-package simple;
+//package simple;
 public class Student{
     int id;
 	String name;

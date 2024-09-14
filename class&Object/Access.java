@@ -1,4 +1,4 @@
-package compeny;
+//package compeny;
 class Employee{
      Integer id;
 	 String name;

@@ -1,4 +1,4 @@
-package double_clss;
+//package double_clss;
 class Student_First{
     int id;
 	String name;
